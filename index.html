@@ -9,19 +9,41 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
-        <div class="board" id="board">
-            <div class="cell" onclick="makeMove(0)"></div>
-            <div class="cell" onclick="makeMove(1)"></div>
-            <div class="cell" onclick="makeMove(2)"></div>
-            <div class="cell" onclick="makeMove(3)"></div>
-            <div class="cell" onclick="makeMove(4)"></div>
-            <div class="cell" onclick="makeMove(5)"></div>
-            <div class="cell" onclick="makeMove(6)"></div>
-            <div class="cell" onclick="makeMove(7)"></div>
-            <div class="cell" onclick="makeMove(8)"></div>
+        <div id="playerSelect">
+            <h2 class="SelectText">Select game mode:</h2>
+            <button class="btn friend-btn" onclick="startGame('player')">Play with a Friend</button>
+            <button class="btn bot-btn" onclick="playWithBot()">Play with Bot</button>
+            <p class="bot-text">Coming soon!</p>                       
         </div>
-        <div id="message" class="message"></div>
-        <button class="btn" onclick="resetGame()">Reset</button>
+                
+        <div id="playerNames" style="display: none;">
+            <h2>Enter player names:</h2>
+            <input type="text" id="player1Name" placeholder="Player 1">
+            <input type="text" id="player2Name" placeholder="Player 2">
+            <button class="btn" onclick="startGame('start')">Start Game</button>
+        </div>
+        
+        <div id="botDifficulty" style="display: none;">
+            <h2>Select bot difficulty:</h2>
+            <button class="btn" onclick="startGame('easy')">Easy</button>
+            <button class="btn" onclick="startGame('hard')">Hard</button>
+        </div>
+        
+        <div id="boardContainer" style="display: none;">
+            <div class="board" id="board">
+                <div class="cell" id="cell0" onclick="makeMove(0)"></div>
+                <div class="cell" id="cell1" onclick="makeMove(1)"></div>
+                <div class="cell" id="cell2" onclick="makeMove(2)"></div>
+                <div class="cell" id="cell3" onclick="makeMove(3)"></div>
+                <div class="cell" id="cell4" onclick="makeMove(4)"></div>
+                <div class="cell" id="cell5" onclick="makeMove(5)"></div>
+                <div class="cell" id="cell6" onclick="makeMove(6)"></div>
+                <div class="cell" id="cell7" onclick="makeMove(7)"></div>
+                <div class="cell" id="cell8" onclick="makeMove(8)"></div>
+            </div>
+            <div id="message" class="message" style="display: none;"></div>
+            <button class="btn" id="resetBtn" onclick="resetGame()" style="display: none;">Reset</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
