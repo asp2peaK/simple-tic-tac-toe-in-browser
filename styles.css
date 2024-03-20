@@ -1,9 +1,9 @@
 body {
-    background-color: #ebe4a9; /* Темно-синий цвет фона */
-    color: black; /* Цвет текста */
-    font-family: Arial, sans-serif; /* Шрифт текста */
-    margin: 0; /* Убираем отступы по умолчанию */
-    padding: 0; /* Убираем отступы по умолчанию */
+    background-color: #ebe4a9;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .container {
     max-width: 800px;   
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    margin-top: 0; /* Убираем отступ сверху для названия игры */
+    margin-top: 0;
 }
 
 .page {
@@ -62,8 +62,8 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Изменено на inline-block */
-    margin: 0 10px; /* Добавим отступы по горизонтали между кнопками */
+    display: inline-block;
+    margin: 0 10px;
 }
 
 
@@ -72,12 +72,12 @@ h1 {
 }
 
 .friend-btn {
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     margin-right: 10px;
 }
 
 .bot-btn {
-    background-color: #dc3545; /* Red color */
+    background-color: #dc3545;
     margin-left: 10px;
 }
 
