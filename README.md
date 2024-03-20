@@ -1,5 +1,5 @@
 # simple-tic-tac-toe-in-browser
-Tic-Tac-Toe game in the browser. Has "reset" button.
+Tic-Tac-Toe game in the browser.
 
 Version 2.0 update has been released for my simple website, where you can play Tic-Tac-Toe.
 
