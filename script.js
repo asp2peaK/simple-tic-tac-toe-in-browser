@@ -23,7 +23,7 @@ function startGame(mode) {
     } else if (mode === 'start') {
         player1Name = document.getElementById('player1Name').value || 'Player 1';
         player2Name = document.getElementById('player2Name').value || 'Player 2';
-        currentPlayer = 'X'; // Устанавливаем первого игрока как игрока, который начинает первым
+        currentPlayer = 'X';
         document.getElementById('playerNames').style.display = 'none';
         document.getElementById('boardContainer').style.display = 'block';
         document.getElementById('message').style.display = 'block';
@@ -71,7 +71,7 @@ function makeMove(index) {
     board[index] = currentPlayer;
     document.getElementById(`cell${index}`).innerText = currentPlayer;
 
-    // Проверка на победу или ничью
+    
     if (checkWin(currentPlayer)) {
         document.getElementById('message').innerText = `${currentPlayer === 'X' ? player1Name : player2Name} wins!`;
         gameOver = true;
